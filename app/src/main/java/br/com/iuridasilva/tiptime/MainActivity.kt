@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip() {
         //recuperar o texto do editable e converter em double
-        val stringInTextField = binding.costOfService.text.toString()
+        val stringInTextField = binding.costOfServiceEditText.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
         if (cost == null || cost == 0.0) {
             displayTip(0.0)
